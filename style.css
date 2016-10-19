@@ -1,0 +1,31 @@
+body {font-family: sans-serif;}
+h1 {text-align: center;}
+#steps_selector {width: 200px;}
+#container_canvas {width: 1000px; margin: auto;}
+#container_controls {width: 400px; margin: auto; background-color: #f3f3f3;}
+
+.btn {
+    font-family: sans-serif;
+    color: #f3f3f3;
+    background: #A84138;
+    width: 150px;
+    padding: 5px 0px 5px 0px;
+    border: none;
+    cursor: pointer;
+    border: solid 1px #FFFFFF;
+}
+
+.btn:focus {outline: 0;}
+
+.btn:hover {
+    color: #000000;
+    background: #f3f3f3;
+    border: solid 1px #000000;
+    font-weight: bold;
+}
+
+.rng {}
+
+.rng:focus {outline: 0;}
+
+.rng:hover {}
