@@ -6,7 +6,11 @@
   <body>
         <h1>Random Walk Generator</h1>
         <div id="container_controls">
+            
+            
             <input id="reset_button" type="button" class="btn" value="Generate" onclick="RW.draw();" />
+            <br />
+            <br />
             <input id="steps_selector" type="range" class="rng" min="100" max="3000", step="100" value="100" onchange="updateLabel(this.value)" width="200" />
             <p>
                Number on steps: <span id="steps_label">100</span><br />
@@ -17,7 +21,7 @@
             <canvas id="rw_area" height="500" width="1000"></canvas>
         </div>
 
-      <script type="text/javascript" src='rw.js'></script>
+        <script type="text/javascript" src='rw.js'></script>
       
   </body>
 </html>

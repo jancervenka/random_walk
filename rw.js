@@ -7,18 +7,18 @@ RW = {
     current_pos: [250, 250],
 
     uniform_step: function() {
-    	var decision = Math.random()
+    	var decision = Math.floor(Math.random() * 4);
     	
-    	if (decision <= 0.25 && RW.current_pos[1] >= 15) {
+    	if (decision == 0 && RW.current_pos[1] >= 15) {
     		RW.current_pos[1] -= 10 - Math.random() * 5;
 
-    	} else if (decision > 0.25 && decision <= 0.5 && RW.current_pos[0] <= 985) {
+    	} else if (decision == 1 && RW.current_pos[0] <= 985) {
     		RW.current_pos[0] += 10 + Math.random() * 5;
 
-    	} else if (decision > 0.5 && decision <= 0.75 && RW.current_pos[1] <= 485) {
+    	} else if (decision == 2 && RW.current_pos[1] <= 485) {
     		RW.current_pos[1] += 10 + Math.random() * 5;
 
-    	} else if (decision > 0.75 && decision < 1 && RW.current_pos[0] >= 15) {
+    	} else if (decision == 3 && RW.current_pos[0] >= 15) {
     		RW.current_pos[0] -= 10 - Math.random() * 5;
     	}
     },
