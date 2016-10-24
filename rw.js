@@ -4,7 +4,7 @@ function updateLabel(val) {
 
 
 RW = {
-    current_pos: [250, 250],
+    current_pos: [500, 250],
 
     uniform_step: function() {
     	var decision = Math.floor(Math.random() * 4);
@@ -21,6 +21,12 @@ RW = {
     	} else if (decision == 3 && RW.current_pos[0] >= 15) {
     		RW.current_pos[0] -= 10;
     	}
+    },
+
+    uniform_step_continuous: function() {
+    	RW.current_pos[0] += Math.random() * 20 - 10;
+
+    	RW.current_pos[1] += Math.random() * 20 - 10;
     },
 
 	draw: function() {
