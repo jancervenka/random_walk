@@ -10,16 +10,16 @@ RW = {
     	var decision = Math.floor(Math.random() * 4);
     	
     	if (decision == 0 && RW.current_pos[1] >= 15) {
-    		RW.current_pos[1] -= 10 - Math.random() * 5;
+    		RW.current_pos[1] -= 10;
 
     	} else if (decision == 1 && RW.current_pos[0] <= 985) {
-    		RW.current_pos[0] += 10 + Math.random() * 5;
+    		RW.current_pos[0] += 10;
 
     	} else if (decision == 2 && RW.current_pos[1] <= 485) {
-    		RW.current_pos[1] += 10 + Math.random() * 5;
+    		RW.current_pos[1] += 10;
 
     	} else if (decision == 3 && RW.current_pos[0] >= 15) {
-    		RW.current_pos[0] -= 10 - Math.random() * 5;
+    		RW.current_pos[0] -= 10;
     	}
     },
 
